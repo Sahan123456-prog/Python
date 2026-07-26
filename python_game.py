@@ -29,14 +29,22 @@ def number_guessing_game():
     secret_number = random.randint(1, 10)
     attempts = 0
 
+    print(f"\nI have selected a number between 1 and {max_num}. Try to guess it!")
+
     while True:
         try:
-            user_guess = int(input("Guess the number between 1 and 10: "))
+            user_guess = int(input("Guess the number: "))
             attempts += 1
 
             if user_guess == secret_number:
-                print("Congratulations! You guessed the number! Attempts: " ,attempts)
-                break
+                print("Congratulations! You guessed the number! \nAttempts: " ,attempts)
+
+                if best_score is None or attempts < best_score:
+                    best_score = attempts
+                    print("New Best Score!\n")
+
+                return best_score
+            
             elif user_guess < secret_number:
                 print("Too low! Guess the high number\n")
             else:
