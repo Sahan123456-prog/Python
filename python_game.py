@@ -4,6 +4,28 @@ import random
 def number_guessing_game():
     print("Welcome to the Number Guessing Game!")
 
+    print("\nSelect Difficult Level: ")
+    print("1. Easy (1 to 10)")
+    print("2. Medium (1 to 50)")
+    print("3. Hard (1 to 100)")
+
+    while True:
+        try:
+            choice = int(input("Enter Your Choice(1, 2, or 3): "))
+            if choice == 1:
+                max_num = 10
+                break
+            elif choice == 2:
+                max_num = 50
+                break
+            elif choice == 3:
+                max_num = 100
+                break
+            else: 
+                print("Invalid Choice! Please enter 1, 2, or 3.")
+        except ValueError:
+            print("Please enter a valid number: ")
+
     secret_number = random.randint(1, 10)
     attempts = 0
 
