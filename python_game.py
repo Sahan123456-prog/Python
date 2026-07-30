@@ -34,13 +34,29 @@ def number_guessing_game(best_score, player_name):
 
     secret_number = random.randint(1, max_num)
     attempts = 0
+    hint_used = False
 
     print(f"\nI have selected a number between 1 and {max_num}. You have {max_attempts} attempts. Good luck!")
+    print("Tip: Type 'hint' if you want a clue (Can use only once!).")
 
     while attempts < max_attempts:
         try:
             remaining_attempts = max_attempts - attempts
             print(f"Remaining attempts: {remaining_attempts}")
+
+            user_input = input("Enter your guess (or type 'hint'): ").lower()
+
+            if user_input == 'hint':
+                if not hint_used:
+                    hint_used = True
+
+                    if secret_number % 2 == 0:
+                        print("Hint: The secret number is an EVEN numebr.")
+                    else:
+                        print("Hint: The secret number is an ODD number.")
+
+                else:
+                    print("You already used the hint!.")
 
             user_guess = int(input("Guess the number: "))
             attempts += 1
