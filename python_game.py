@@ -62,7 +62,7 @@ def number_guessing_game(best_score, player_name):
             attempts += 1
 
             if user_guess == secret_number:
-                print("Congratulations {player_name}! You guessed the number! \nAttempts: " ,attempts)
+                print("Congratulations! {player_name} You guessed the number! \nAttempts: " ,attempts)
 
                 if best_score is None or attempts < best_score:
                     best_score = attempts
