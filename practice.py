@@ -150,3 +150,43 @@ print(mixed[2])  # Output: 3.14
 print(mixed[3])  # Output: True
 
 print ("---------------------------------")
+
+print ("Arithmetic Operations in Python")
+
+x = 20
+y = 10
+result = x + y
+print ("Addition: ", result)
+
+#output: Addition: 30
+
+result = x - y
+print ("Subtraction: ", result)
+
+#output: Subtraction: 10
+
+result = x * y
+print ("Multiplication: ", result)
+
+#output: Multiplication: 200
+
+result = x / y
+print ("Division: ", result)
+
+#output: Division: 2.0
+
+result = x // y
+print ("Floor Division: ", result)
+
+#output: Floor Division: 2
+
+result = x % y
+print ("Modulus: ", result)
+
+#output: Modulus: 0
+
+result = x ** y
+print ("Exponentiation: ", result)
+
+#output: Exponentiation: 10240000000000
+
