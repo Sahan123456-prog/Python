@@ -190,3 +190,66 @@ print ("Exponentiation: ", result)
 
 #output: Exponentiation: 10240000000000
 
+print ("---------------------------------")
+
+print ("String Operations in Python")
+
+var = "Small"
+print (var[0])
+
+#output: S
+
+print (var[0:2])
+
+#output: Sm
+
+print (var[3:])
+
+#output: all
+
+print (var[:2])
+
+#output: Sm
+
+print (var[10])
+
+#output: IndexError: string index out of range
+
+len(var)
+
+#output: 5
+
+#Semicolon is not required in python. It is used to separate multiple statements on a single line. But it is not recommended to use semi-colon in python as it reduces the readability of the code.
+
+print ("---------------------------------")
+
+print ("Functions in Python")
+
+x = -7.5
+print (abs(x))
+
+#output: 7.5
+
+#math.e = 2.718281828459045
+#math.pi = 3.141592653589793
+
+import math
+x = 10
+print (math.exp(x))
+
+#output: 22026.465794806718
+
+print (math.sqrt(x))
+
+#output: 3.1622776601683795
+
+max(1, 34, 587, 3654, 968, 5879, 365, 587, 3654, 968, 5869)
+print (max)
+
+#output: 5879
+
+min(1, 34, 587, 3654, 968, 5879, 365, 587, 3654, 968, 5869)
+print (min)
+
+#output: 1
+
