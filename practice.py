@@ -576,3 +576,24 @@ print (city * 2)
 #output: ('New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 'New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix')
 
 print ("---------------------------------")
+
+print("Nested Tuples in Python")
+
+nest = (city, num)
+print (nest)
+#output: (('New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix'), (1, 2, 3, 4, 5))
+
+print (nest[0])
+#output: ('New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix')
+
+print (nest[1])
+#output: (1, 2, 3, 4, 5)
+
+print (nest[0][1])
+#output: Los Angeles
+
+print (nest[1][3])
+#output: 4
+
+print ("---------------------------------")
+
