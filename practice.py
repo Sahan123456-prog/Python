@@ -262,8 +262,8 @@ print (num)
 
 #output: [1, 2, 3, 4, 5]
 
-letter = ["a", "b", "c", "d", "e"]
-print (letter)
+letters = ["a", "b", "c", "d", "e"]
+print (letters)
 
 #output: ['a', 'b', 'c', 'd', 'e']
 
@@ -323,7 +323,7 @@ print (letters)
 stg = ["get", "cat", "dog", "bat"]
 print (stg)
 
-conc = letter + stg
+conc = letters + stg
 print (conc)
 #output: ['a', 'b', 'c', 'd', 'e', 'get', 'cat', 'dog', 'bat']
 
@@ -342,5 +342,161 @@ print (one)
 print (other)
 #output: [2, 3, 4, 5]
 #In this example, we are using unpacking to assign the first element of the list num to the variable one and the rest of the elements to the variable other. The * operator is used to indicate that we want to capture all remaining elements in a list.
+
+print ("---------------------------------")
+
+print ("List Methods in Python")
+
+print ("1. append() method")
+
+num = [1, 2, 3, 4, 5]
+print (num)
+#output: [1, 2, 3, 4, 5]
+
+num.append(6)
+print (num)
+#output: [1, 2, 3, 4, 5, 6]
+
+print ("2. extend() method")
+
+num = [1, 2, 3, 4, 5]
+print (num)
+#output: [1, 2, 3, 4, 5]
+
+num.extend([6, 7, 8])
+print (num)
+#output: [1, 2, 3, 4, 5, 6, 7, 8]
+
+stg = ["get", "cat", "dog", "bat"]
+print (stg)
+#output: ['get', 'cat', 'dog', 'bat']
+
+num.extend(stg)
+print (num)
+#output: [1, 2, 3, 4, 5, 6, 7, 8, 'get', 'cat', 'dog', 'bat']
+#In this example, we are using the extend() method to add the elements of the list stg to the end of the list num. The extend() method takes an iterable (like a list) as an argument and adds each element of that iterable to the end of the list.
+
+print ("3. insert() method")
+
+num.insert(5, "Simple")
+print (num)
+#output: [1, 2, 3, 4, 5, 'Simple', 6, 7, 8, 'get', 'cat', 'dog', 'bat']
+#In this example, we are using the insert() method to add the string "Simple" at index 5 of the list num. The insert() method takes two arguments: the index where we want to insert the new element and the element itself. The existing elements in the list are shifted to the right to make room for the new element.
+
+print ("4. remove() method")
+
+num.remove("Simple")
+print (num)
+#output: [1, 2, 3, 4, 5, 6, 7, 8, 'get', 'cat', 'dog', 'bat']
+#In this example, we are using the remove() method to remove the first occurrence of the string "Simple" from the list num. The remove() method takes one argument: the element we want to remove from the list. If the element is not found in the list, a ValueError will be raised.
+
+var1 = ['b', 'd', 'q', 'a', 'l']
+var1.sort()
+print (var1)
+#output: ['a', 'b', 'd', 'l', 'q']
+#In this example, we are using the sort() method to sort the elements of the list var1 in ascending order. The sort() method modifies the original list in place and does not return a new list. If we want to sort the list in descending order, we can pass the argument reverse=True to the sort() method.
+
+print ("5. pop() method")
+
+num.pop()
+print (num)
+#output: [1, 2, 3, 4, 5, 6, 7, 8, 'get', 'cat', 'dog']
+#In this example, we are using the pop() method to remove and return the last element of the list num. The pop() method takes an optional argument: the index of the element we want to remove. If no index is provided, the last element of the list is removed by default. The pop() method modifies the original list in place and returns the removed element.
+
+print ("6. index() method")
+
+print (num.index(5))
+#output: 4
+#In this example, we are using the index() method to find the index of the first occurrence of the integer 5 in the list num. The index() method takes one argument: the element we want to find the index of. If the element is not found in the list, a ValueError will be raised.
+
+print ("7. count() method")
+
+num = [1, 2, 3, 4, 5, 5, 6, 7, 8]
+print (num)
+#output: [1, 2, 3, 4, 5, 5, 6, 7, 8]
+
+print (num.count(5))
+#output: 2
+#In this example, we are using the count() method to count the number of occurrences of the integer 5 in the list num. The count() method takes one argument: the element we want to count. It returns the number of times the element appears in the list.
+
+print ("8. reverse() method")
+
+num.reverse()
+print (num)
+#output: [8, 7, 6, 5, 5, 4, 3, 2, 1]
+#In this example, we are using the reverse() method to reverse the order of the elements in the list num. The reverse() method modifies the original list in place and does not return a new list. If we want to create a new list that is a reversed version of the original list, we can use slicing with a step of -1 (num[::-1]).
+
+print ("9. clear() method")
+
+num.clear()
+print (num)
+#output: []
+#In this example, we are using the clear() method to remove all elements from the list num. The clear() method modifies the original list in place and does not return a new list.
+
+print ("10. copy() method")
+
+num = [1, 2, 3, 4, 5]
+num_copy = num.copy()
+print (num_copy)
+#output: [1, 2, 3, 4, 5]
+#In this example, we are using the copy() method to create a shallow copy of the list num. The copy() method returns a new list that contains the same elements as the original list. Changes made to the new list will not affect the original list, and vice versa.
+
+print ("11. list() method")
+
+num = [1, 2, 3, 4, 5]
+num_list = list(num)
+print (num_list)
+#output: [1, 2, 3, 4, 5]
+#In this example, we are using the list() method to create a new list that contains the same elements as the original list num. The list() method takes an iterable as an argument and returns a new list containing all the elements of the iterable.
+
+print ("12. del() method")
+
+num = [1, 2, 3, 4, 5]
+del num[2]
+print (num)
+#output: [1, 2, 4, 5]
+#In this example, we are using the del() method to remove the element at index 2 from the list num. The del() method takes an index as an argument and removes the element at that index from the list. The existing elements in the list are shifted to the left to fill the gap left by the removed element.
+
+print ("13. in operator")
+
+num = [1, 2, 3, 4, 5]
+if 3 in num:
+    print ("3 is present in the list")
+#output: 3 is present in the list
+
+if 6 not in num:
+    print ("6 is not present in the list")
+#output: 6 is not present in the list
+
+print ("14. len() method")
+
+num = [1, 2, 3, 4, 5]
+print (len(num))
+#output: 5
+#In this example, we are using the len() method to get the number of elements in the list num. The len() method takes a list as an argument and returns the number of elements in that list.
+
+print ("15. sum() method")
+
+num = [1, 2, 3, 4, 5]
+print (sum(num))
+#output: 15
+#In this example, we are using the sum() method to calculate the sum of all elements in the list num. The sum() method takes a list as an argument and returns the sum of all elements in that list.
+
+print ("16. sorted() method")
+
+num = [5, 2, 9, 1, 5, 6]
+sorted_num = sorted(num)
+print (sorted_num)
+#output: [1, 2, 5, 5, 6, 9]
+#In this example, we are using the sorted() method to create a new list that contains the elements of the original list num in ascending order. The sorted() method does not modify the original list and returns a new list. If we want to sort the list in descending order, we can pass the argument reverse=True to the sorted() method.
+
+print ("17. list comprehension")
+
+num = [1, 2, 3, 4, 5]
+squared_num = [x**2 for x in num]
+print (squared_num)
+#output: [1, 4, 9, 16, 25]
+#In this example, we are using list comprehension to create a new list that contains the squares of all elements in the list num. The list comprehension takes the form [expression for item in iterable].
+#x is the expression that defines how to transform each item in the iterable (in this case, squaring each number), and num is the iterable we are iterating over. The result is a new list containing the squared values of the original list.
 
 print ("---------------------------------")
