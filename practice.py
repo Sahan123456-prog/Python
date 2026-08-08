@@ -253,3 +253,60 @@ print (min)
 
 #output: 1
 
+print("---------------------------------")
+
+print ("Lists in Python")
+
+num = [1, 2, 3, 4, 5]
+print (num)
+
+#output: [1, 2, 3, 4, 5]
+
+letter = ["a", "b", "c", "d", "e"]
+print (letter)
+
+#output: ['a', 'b', 'c', 'd', 'e']
+
+stg = ["get", "cat", "dog", "bat"]
+print (stg)
+
+#output: ['get', 'cat', 'dog', 'bat']
+
+mix = [1, 6, "dog", "cat"]
+print (mix)
+
+#output: [1, 6, 'dog', 'cat']
+
+print (mix[3])
+#output: cat
+
+print (mix[-2])
+#output: dog
+#In this example, we are using negative indexing to access the elements of the list. The index -1 refers to the last element of the list, -2 refers to the second last element, and so on.
+
+print (mix[2:])
+#output: ['dog', 'cat']
+#In this example, we are using slicing to get the elements from index 2 to the end of the list. The output is a new list that contains the elements from index 2 to the end of the original list.
+
+print (mix[:2])
+#output: [1, 6]
+#In this example, we are using slicing to get the elements from the beginning of the list up to, but not including, index 2. The output is a new list that contains the elements from the beginning of the original list up to, but not including, index 2. 
+
+print (mix[1:3])
+#output: [6, 'dog']
+#In this example, we are using slicing to get the elements from index 1 to index 3 (not including index 3) of the list. The output is a new list that contains the elements from index 1 to index 2 of the original list.
+
+print (mix[::2])
+#output: [1, 'dog']
+#In this example, we are using slicing with a step of 2 to get every second element from the list. The output is a new list that contains the elements at indices 0, 2, 4, and so on.
+#mix[start:stop:step] is the syntax for slicing a list in Python. The start index is inclusive, the stop index is exclusive, and the step index determines the interval between elements to include in the new list.
+
+print (mix[::-1])
+#output: ['cat', 'dog', 6, 1]
+#In this example, we are using slicing with a negative step of -1 to get the elements of the list in reverse order. The output is a new list that contains the elements of the original list in reverse order.
+
+print (mix[1:4:2])
+#output: [6, 'cat']
+#In this example, we are using slicing with a step of 2 to get every second element from the list. The output is a new list that contains the elements at indices 1, 3, 5, and so on.
+
+print ("---------------------------------")
