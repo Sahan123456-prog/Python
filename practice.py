@@ -500,3 +500,33 @@ print (squared_num)
 #x is the expression that defines how to transform each item in the iterable (in this case, squaring each number), and num is the iterable we are iterating over. The result is a new list containing the squared values of the original list.
 
 print ("---------------------------------")
+
+print ("Built-in functions with Lists in Python")
+
+x = [9, 12, 14, 5, 90, 45, 65, 55, 75, 85]
+
+len(x)
+print(len(x))
+#output: 10
+
+min(x)
+print(min(x))
+#output: 5
+
+max(x)
+print(max(x))
+#output: 90
+
+sorted_x = sorted(x)
+print(sorted_x)
+#output: [5, 9, 12, 14, 45, 55, 65, 75, 85, 90]
+
+sum_x = sum(x)
+print(sum_x)
+#output: 455
+
+Average_x = sum(x) / len(x)
+print(Average_x)
+#output: 45.5
+
+print ("---------------------------------")
