@@ -558,3 +558,21 @@ tuple1.append(6)
 #We can use or not use the parentheses () to define a tuple. If we use parentheses, we can create an empty tuple or a tuple with one or more elements. If we do not use parentheses, we can create a tuple with one or more elements, but we cannot create an empty tuple.
 #Difference between list and tuple is that list is mutable (changeable) while tuple is immutable (unchangeable). This means that we can add, remove, or change items in a list, but we cannot do the same with a tuple.
 
+print ("---------------------------------")
+
+print ("Concatenation of Tuples in Python")
+
+print (city)
+#output: ('New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix')
+
+num = (1, 2, 3, 4, 5)
+print (num)
+#output: (1, 2, 3, 4, 5)
+
+print (city + num)
+#output: ('New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 1, 2, 3, 4, 5)
+
+print (city * 2)
+#output: ('New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 'New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix')
+
+print ("---------------------------------")
