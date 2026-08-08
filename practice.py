@@ -597,3 +597,13 @@ print (nest[1][3])
 
 print ("---------------------------------")
 
+print ("Repetition of Tuples in Python")
+
+print (city * 3)
+#output: ('New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 'New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix', 'New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix')
+
+rep = (1, 2, 3) * 4
+print (rep)
+#output: (1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3)
+
+print ("---------------------------------")
