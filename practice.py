@@ -530,3 +530,31 @@ print(Average_x)
 #output: 45.5
 
 print ("---------------------------------")
+
+print ("Tuples in Python")
+
+emp = ()
+print (type(emp))
+#output: <class 'tuple'>
+
+print (emp)
+#output: ()
+
+city = ("New York", "Los Angeles", "Chicago", "Houston", "Phoenix")
+print (city)
+#output: ('New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix')   
+
+type(city)
+#output: <class 'tuple'>
+
+city = "New york",
+type(city)
+#output: <class 'tuple'>
+
+tuple1 = (1, 2, 3, 4, 5)
+tuple1.append(6)
+#output: AttributeError: 'tuple' object has no attribute 'append'
+#tuple object has no attribute 'append' because tuples are immutable, meaning that their elements cannot be changed after they are created. Therefore, we cannot add or remove elements from a tuple using methods like append() or remove().
+#We can use or not use the parentheses () to define a tuple. If we use parentheses, we can create an empty tuple or a tuple with one or more elements. If we do not use parentheses, we can create a tuple with one or more elements, but we cannot create an empty tuple.
+#Difference between list and tuple is that list is mutable (changeable) while tuple is immutable (unchangeable). This means that we can add, remove, or change items in a list, but we cannot do the same with a tuple.
+
