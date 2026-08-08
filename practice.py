@@ -310,3 +310,37 @@ print (mix[1:4:2])
 #In this example, we are using slicing with a step of 2 to get every second element from the list. The output is a new list that contains the elements at indices 1, 3, 5, and so on.
 
 print ("---------------------------------")
+
+print ("Operations on Lists in Python")
+
+z = [0]*10
+print (z)
+#output: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+letters = ["a", "b", "c", "d", "e"]
+print (letters)
+
+stg = ["get", "cat", "dog", "bat"]
+print (stg)
+
+conc = letter + stg
+print (conc)
+#output: ['a', 'b', 'c', 'd', 'e', 'get', 'cat', 'dog', 'bat']
+
+var = list("Hey there!")
+print (var)
+#output: ['H', 'e', 'y', ' ', 't', 'h', 'e', 'r', 'e', '!']
+
+num = [1, 2, 3, 4, 5]
+print (num)
+
+one, *other = num
+print (one)
+#output: 1
+#In this example, we are using unpacking to assign the first element of the list num to the variable one and the rest of the elements to the variable other. The * operator is used to indicate that we want to capture all remaining elements in a list.
+
+print (other)
+#output: [2, 3, 4, 5]
+#In this example, we are using unpacking to assign the first element of the list num to the variable one and the rest of the elements to the variable other. The * operator is used to indicate that we want to capture all remaining elements in a list.
+
+print ("---------------------------------")
