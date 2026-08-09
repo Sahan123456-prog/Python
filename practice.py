@@ -637,3 +637,15 @@ print(a, b, c, d)
 #output: 1 [2, 3] 4
 
 print ("---------------------------------")
+
+print("Deleting a Tuple in Python")
+
+tuple1 = (1, 2, 3, 4, 5)
+print(tuple1)
+#output: (1, 2, 3, 4, 5)
+
+del tuple1
+print(tuple1)
+#Error
+
+print ("---------------------------------")
