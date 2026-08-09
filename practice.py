@@ -607,3 +607,14 @@ print (rep)
 #output: (1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2, 3)
 
 print ("---------------------------------")
+
+print ("Slicing of Tuples in Python")
+
+num = (1, 2, 3, 4, 5)
+print (num[1:4])
+#output: (2, 3, 4)
+
+print(num[::-1])
+#output: (4, 3, 2, 1)
+
+print ("---------------------------------")
