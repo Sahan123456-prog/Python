@@ -618,3 +618,22 @@ print(num[::-1])
 #output: (4, 3, 2, 1)
 
 print ("---------------------------------")
+
+print ("Unpacking of Tuples in Python")
+
+tuple("Simplilearn")
+#output: ('S', 'i', 'm', 'p', 'l', 'i', 'l', 'e', 'a', 'r', 'n')
+
+num = (1, 2, 3, 4, 5)
+print(num)
+#output: (1, 2, 3, 4, 5)
+
+a, b, c, d, e = num
+print(a, b, c, d, e)
+#output: 1 2 3 4 5
+
+a, *b, c, d = num
+print(a, b, c, d)
+#output: 1 [2, 3] 4
+
+print ("---------------------------------")
