@@ -678,3 +678,23 @@ print (lst)
 
 print ("---------------------------------")
 
+print ("Nesting lists with tuples")
+
+tpl = (['a', 'b', 'c'], ['d', 'e', 'f'])
+print (tpl)
+#output: (('a', 'b', 'c'), ('d', 'e', 'f'))
+
+tpl[0].append('z')
+print (tpl)
+#output: (['a', 'b', 'c', 'z'], ['d', 'e', 'f'])
+
+tpl[0].remove('z')
+print (tpl)
+#output: (['a', 'b', 'c'], ['d', 'e', 'f'])
+
+tpl.append(['x', 'y', 'z'])
+print(tpl)
+#output: Error
+
+print ("---------------------------------")
+
