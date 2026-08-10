@@ -698,3 +698,92 @@ print(tpl)
 
 print ("---------------------------------")
 
+print ("String in Python")
+
+stg = "Simple"
+print (stg)
+#output: Simple
+
+stg = 'Simple'
+print (stg)
+#output: Simple
+#In Python, We can use "" and '' in one word or senetence without ''.
+
+stg = "Tim's birthday"
+print (stg)
+#output: Tim's birthday
+
+#stg = 'Tim's birthday'
+print (stg)
+#output: Error
+#In Python, We can't use '' in sentence include ''.
+
+stg = '''hey there!
+Welcome to Simplilarn'''
+print (stg)
+#output: hey there!
+#output: Welcome to Simplilearn
+
+stg = "Simplilearn"
+print (len(stg))
+#output: 11
+
+stg = "Simplilearn"
+print (len[5])
+#ouput: i
+
+stg = "Simplilearn"
+print (stg[0:5])
+#output: Simpl
+
+stg = "Simplilearn"
+print (stg[:5])
+#output: Simpl
+
+print (stg[5:])
+#output: ilearn
+
+print (stg[2:5])
+#output: mpl
+
+stg = "Welcome to Simplilearn"
+print (stg.upper())
+#output: WELCOME TO SIMPLILEARN
+
+print (stg.lower())
+#output: welcome to simplilearn
+
+print (stg.find('S'))
+#output: 11
+
+print (stg.index())
+#output: 11
+
+print (stg.find('l'))
+#output: 2
+#In Python, If you want to find the some letter, and also it have different places in this word or sentence, it will give first index of this, it will first find.
+
+print (stg.split(" "))
+#output: ['Welcome', 'to', 'Simplilearn']
+
+print (stg.replace("Simplilearn", "Python"))
+#output: Welcome to Python
+
+print (stg.rpartition(" to "))
+#output: ('Welcome', 'to', 'Simplilearn')
+
+stg1 = "good"
+stg2 = "morning"
+stg = stg1+ " " +stg2
+print (stg)
+#output: good morning
+
+stg1 = "Hey"
+stg2 = "there"
+stg3 = "all"
+stg = "{} {}, {}!".format(stg1, stg2, stg3)
+print (stg)
+#output: Hey there, all!
+
+print ("---------------------------------")
+
