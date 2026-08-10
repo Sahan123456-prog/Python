@@ -649,3 +649,16 @@ print(tuple1)
 #Error
 
 print ("---------------------------------")
+
+print ("Converting list to tuple")
+
+lst = [1, 2, 3, 4, 5]
+print (type(lst))
+#output: <class 'tuple'>
+
+tpl = tuple(lst)
+print (tpl)
+#output: (1, 2, 3, 4, 5)
+
+print ("---------------------------------")
+
