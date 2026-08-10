@@ -662,3 +662,19 @@ print (tpl)
 
 print ("---------------------------------")
 
+print ("Nesting tuples in a list")
+
+lst = [(1, 2, 3), (4, 5, 6)]
+print(lst)
+#output: [(1, 2, 3), (4, 5, 6)]
+
+lst.append(("tuple", "inside", "list"))
+print(lst)
+#output: [(1, 2, 3), (4, 5, 6), ('tuple', 'inside', 'list')]
+
+lst.remove((1, 2, 3))
+print (lst)
+#output: [(4, 5, 6), ('tuple', 'inside', 'list')]
+
+print ("---------------------------------")
+
