@@ -884,3 +884,21 @@ s1.difference(s2)
 #output: {1, 7}
 
 print ("---------------------------------")
+
+print ("if statements")
+
+a = 20
+if a > 50:
+    print ("This is the if body")
+print ("This is outside the if block")
+#output: This is outside the if block
+
+a = 60
+if a > 50:
+    print ("This is the if body")
+print ("This is outside the if block")
+#output: This is the if body
+#output: This is outside the if block
+#The both statements are print, because first one is the true (60 > 50). So first statement is true. Second statement is out of the if statement. Then it also print.
+
+print ("---------------------------------")
