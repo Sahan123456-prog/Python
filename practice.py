@@ -833,3 +833,16 @@ print(d)
 #output: {0: 'Welcome', 1: ('How', 'are', 'you'), 'name': 'Sam'}
 
 print ("---------------------------------")
+
+print ("Accessing elements")
+
+print (d["name"])
+#output: {'first': 'Sam', 'last': 'Crew'}
+
+print (d["name"]["first"])
+#output: 'Sam'
+
+print (d.get(1))
+#output: ('How', 'are', 'you')
+
+print ("---------------------------------")
