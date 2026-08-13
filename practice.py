@@ -846,3 +846,10 @@ print (d.get(1))
 #output: ('How', 'are', 'you')
 
 print ("---------------------------------")
+
+print ("Deleting elements")
+
+d.pop(0)
+#output: 'Welcome'
+
+print ("---------------------------------")
