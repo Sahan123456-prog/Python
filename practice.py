@@ -853,3 +853,34 @@ d.pop(0)
 #output: 'Welcome'
 
 print ("---------------------------------")
+
+print ("Sets in Python")
+
+s = set([1, 2, 3, 4])
+print (s)
+print (type(s))
+#output: {1, 2, 3, 4}
+#output: <class 'set'>
+
+s.add('a')
+print (s)
+#output: {1, 2, 3, 4, 'a'}
+
+fs = frozenset([1, 2, 3, 4])
+print (fs)
+#output: frozenset({1, 2, 3, 4})
+
+fs.add('a')
+#output: Error
+#In Python, 'frozenset' object has no attribute 'add'.
+
+s1 = set([1, 3, 7, 2])
+s2 = set([3, 2, 8, 9])
+s1.union(s2)
+#output: {1, 2, 3, 7, 8, 9}
+#union does all the elements are collect the s1 and s2 together, and also it remove unique elements. 
+
+s1.difference(s2)
+#output: {1, 7}
+
+print ("---------------------------------")
