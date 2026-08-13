@@ -787,3 +787,33 @@ print (stg)
 
 print ("---------------------------------")
 
+print ("Python Dictionaries sets")
+
+d1 = {}
+print(d1)
+print (type(d1))
+#output: {}
+#<class 'dict'>
+
+d2 = {1:"Welcome", 2:"to", 3:"Python", 4:"tutorial"}
+print(d2)
+#output: {1:'Welcome', 2:'to', 3:'Python', 4:'tutorial'}
+
+d3 = {"name": "Sam", "age": 22, "Profession": "Student"}
+print(d3)
+#output: {'name': 'Sam', 'age': 22, 'Profession': 'Student'}
+
+d4 = dict({1:"Welcome", 2:"to", 3:"Python", 4:"tutorial"})
+print(d4)
+#output: {1:'Welcome', 2:'to', 3:'Python', 4:'tutorial'}
+
+d5 = dict([(1, "Welcome"), (2, "to"), (3, "Python")])
+print(d5)
+#output: {1:'Welcome', 2:'to', 3:'Python'}
+
+d6 = {"name": {"first": "Sam", "last": "Crew"}, "age": 22}
+print(d6)
+#output: {'name': {'first': 'Sam', 'last': 'Crew'}, 'age': 22}
+
+print ("---------------------------------")
+
