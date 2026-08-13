@@ -817,3 +817,19 @@ print(d6)
 
 print ("---------------------------------")
 
+print ("Adding elements")
+
+d = {}
+d[0]= "Welcome"
+print(d)
+#output:{0: 'Welcome'}
+
+d[1]= {"How", "are", "you"}
+print(d)
+#output: {0: 'Welcome', 1:('How', 'are', 'you')}
+
+d["name"]
+print(d)
+#output: {0: 'Welcome', 1: ('How', 'are', 'you'), 'name': 'Sam'}
+
+print ("---------------------------------")
