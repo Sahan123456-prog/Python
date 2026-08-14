@@ -946,3 +946,145 @@ else :
 #output: This is the consonant
 
 print ("---------------------------------")
+
+print ("Loops")
+
+#A loop is  an instruction that repeats multiple times as long as some condition is met.
+
+print ("For loop")
+
+x = [1, 4.2, "Simple"]
+for i in x :
+    print (i)
+#output: 1
+#output: 4.2
+#output: Simple
+
+x = "Simplilearn"
+for i in x :
+    print(i, end='')
+#output: Simplilearn
+
+for i in range(0, 21, 2):
+    print (i, end='')
+#output: 02468101214161820
+
+sum = 0
+for i in (0, 21) :
+    if i % 2 :
+        sum = sum + i
+    print (sum)
+#output: 110
+
+n = int(input("Enter a number: "))
+for i in range(1, n+1) :
+    for j in range(1, i+1) :
+        print (j, end='')
+    print()
+#output:1
+#output:12
+#output:123
+#output:1234
+#output:12345
+
+r = int(input("Enter number of rows: "))
+c = int(input("Enter number of columns: "))
+x = []
+val = []
+
+for i in range(0, r) :
+    for j in range(0, c) :
+        val.insert (j, int(input("Enter the %d * %d element: " % (i, j))))
+    x.insert(i, val)
+    val = []
+
+y = []
+
+for i in range(0, r) :
+    for j in range(0, c) :
+        val.insert (j, int(input("Enter the %d * %d element: " % (i, j))))
+    y.insert(i, val)
+    val = []
+
+sum = []
+
+for i in range(0, r) :
+    for j in range(0, c) :
+        val.insert (j, x[i][j] + y[i][j])
+    sum.insert (i, val)
+    val = []
+
+print(sum)
+
+r = int(input("Enter number of rows: "))
+c = int(input("Enter number of columns: "))
+x = []
+val = []
+
+for i in range(0, r) :
+    for j in range(0, c) :
+        val.insert (j, int(input("Enter the %d * %d element: " % (i, j))))
+    x.insert(i, val)
+    val = []
+
+y = []
+
+for i in range(0, r) :
+    for j in range(0, c) :
+        val.insert (j, int(input("Enter the %d * %d element: " % (i, j))))
+    y.insert(i, val)
+    val = []
+
+sum = []
+
+for i in range(0, r) :
+    for j in range(0, c) :
+        val.insert (j, x[i][j] + y[i][j])
+    sum.insert (i, val)
+    val = []
+
+print(sum)
+
+r = int(input("Enter number of rows: "))
+c = int(input("Enter number of columns: "))
+x = []
+val = []
+
+for i in range(0, r) :
+    for j in range(0, c) :
+        val.insert (j, int(input("Enter the %d * %d element: " % (i, j))))
+    x.insert(i, val)
+    val = []
+
+y = []
+
+for i in range(0, r) :
+    for j in range(0, c) :
+        val.insert (j, int(input("Enter the %d * %d element: " % (i, j))))
+    y.insert(i, val)
+    val = []
+
+sum = []
+
+for i in range(0, r) :
+    for j in range(0, c) :
+        val.insert (j, x[i][j] + y[i][j])
+    sum.insert (i, val)
+    val = []
+
+print(sum)
+
+#output: Enter number of rows: 2
+#output: Enter number of columns: 2
+#output: Enter the 0*0 elements: 1
+#output: Enter the 0*1 elements: 2
+#output: Enter the 1*0 elements: 3
+#output: Enter the 1*1 elements: 4
+#output: Enter the 0*0 elements: 5
+#output: Enter the 0*1 elements: 6
+#output: Enter the 1*0 elements: 7
+#output: Enter the 1*1 elements: 8
+#output: [[6, 8], [10, 12]]
+
+#&d = In Python, %d is a format specifier used to represent a decimal integer(a whole number)
+#The % symbol acts as a placeholder marker, and the letter d stands for decimal integer.
