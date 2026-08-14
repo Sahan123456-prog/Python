@@ -902,3 +902,47 @@ print ("This is outside the if block")
 #The both statements are print, because first one is the true (60 > 50). So first statement is true. Second statement is out of the if statement. Then it also print.
 
 print ("---------------------------------")
+
+print ("if else statement")
+
+i = 20
+if i % 2 == 0 :
+    print ("i is an even number")
+else :
+    print ("i is an odd number")
+#output: i is an even number
+
+print ("---------------------------------")
+
+print ("Nested if statement")
+
+c = 21
+if c < 25 :
+    if c % 2 == 0 :
+        print ("c is an even number less than 25")
+    else :
+        print ("c is an odd number less than 25")
+else :
+    print ("c is greater than 25")
+#output: c is an odd number less than 25
+
+print ("---------------------------------")
+
+print ("if - elif - else statement")
+
+var = "z"
+if var == 'a' :
+    print ("This is the vowel a")
+elif var == 'e' :
+    print ("This is the vowel e")
+elif var == 'i' :
+    print ("This is the vowel i")
+elif var == 'o' :
+    print ("This is the vowel o")
+elif var == 'u' :
+    print ("This is the vowel u")
+else :
+    print ("This is the consonant")
+#output: This is the consonant
+
+print ("---------------------------------")
