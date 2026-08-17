@@ -1088,3 +1088,104 @@ print(sum)
 
 #&d = In Python, %d is a format specifier used to represent a decimal integer(a whole number)
 #The % symbol acts as a placeholder marker, and the letter d stands for decimal integer.
+
+print ("---------------------------------")
+
+print ("While Loop")
+
+#While Loop is used to repeat a section of code unknown number of times until a specific condition is met.
+
+i = 1
+while i <= 10:
+    print ("Simple")
+    i += 1
+
+#output: Simple
+#output: Simple
+#output: Simple
+#output: Simple
+#output: Simple
+#output: Simple
+#output: Simple
+#output: Simple
+#output: Simple
+#output: Simple
+
+i = 1
+sum = 0
+while i <= 10:
+    sum = sum + i
+    i += 1
+print (sum)
+#output: 55
+
+i = 1
+sum = 0
+while i <= 10 :
+    if i % 2 == 0:
+        sum = sum + i
+    i += 1
+print (sum)
+#output: 30
+
+x = [1, 2.3, "Simple"]
+length = 0
+i = 0
+try :
+    while x[i] :
+        length += 1
+        i += 1
+except IndexError :
+    print (length)
+#output: 3
+
+n = int(input("Enter a number: "))
+nr = 0
+while n % 10 != 0 :
+    c = n%10
+    nr = nr*10 + c
+    n = n//10
+print (nr)
+#Enter a number: 1234
+#output: 4321
+
+n= int(input("Enter a number: "))
+i = 1
+while i <= n :
+    j = 1
+    while j <= i :
+        print (i, end='')
+        j += 1
+    i += 1
+    print ()
+#output: Enter a number: 5
+#output: 1
+#output: 22
+#output: 333
+#output: 4444
+#output: 55555
+
+import random 
+nump = random.randint (1000, 9999)
+n = int(input("Enter a 4 digit number: "))
+
+while n != 10:
+    num = nump
+    cor = 0
+    while num % 10 :
+        numc = num % 10
+        nc = n % 10
+        num = num // 10
+        n = n // 10
+        if numc == nc :
+            cor = cor + 1
+    if cor == 4 :
+        print ("Congrats! you gussed it right")
+        break
+    else :
+        print ("%d digits were guessed right" %cor)
+        n = int(input("Enter a 4 digit number: "))
+else :
+    print ("You quit the game")
+
+print ("---------------------------------")
