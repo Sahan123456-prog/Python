@@ -1190,3 +1190,103 @@ else :
 
 print ("---------------------------------")
 
+print("Array in Python")
+
+from array import *
+
+arr = array('i', [1, 2, 3, 4, 5])
+print(arr)
+
+#output: array('i', [1, 2, 3, 4, 5])
+
+print(arr.buffer_info())
+
+#output: (2164832217896, 5)
+
+print(arr[2])
+
+#output: 3
+
+for i in arr:
+    print(i)
+
+#output: 1
+#output: 2
+#output: 3
+#output: 4
+#output: 5
+
+for pnt in range(5):
+    print(pnt, arr[pnt])
+
+#output: 0 1
+#output: 1 2
+#output: 2 3
+#output: 3 4
+#output: 4 5
+
+for pnt in range(4):
+    print(pnt, arr[pnt])
+
+#output: 0 1
+#output: 1 2
+#output: 2 3 
+#output: 3 4
+
+for pnt in range(1, 4):
+    print(pnt, arr[pnt])
+
+#output: 1 2
+#output: 2 3
+#output: 3 4
+
+arr.reverse()
+print(arr)
+
+#output: array('i', [5, 4, 3, 2, 1])
+
+arr.append(10)
+print(arr)
+
+#output: array('i', [5, 4, 3, 2, 1, 10])
+
+arr.remove(2)
+print(arr)
+
+#output: array('i', [5, 4, 3, 1, 10])
+
+arr = array('i', [1, 2, 2, 3, 4, 5])
+arr.remove(2)
+print(arr)
+
+#output: array('i', [1, 2, 3, 4, 5])
+
+print(arr[2])
+print(arr.index(2))
+
+#output: 2
+#output: 1
+
+arr = array("i", [])
+print(arr)
+
+#output: array('i')
+
+from array import *
+arr = array('i', [])
+x = int(input("Enter size of array "))
+print("Enter %d elements" %x)
+for i in range(x) :
+    n = int(input())
+    arr.append(n)
+print(arr)
+
+#output: Enter size of array 4
+#output: Enter 4 elements
+#output: 1
+#output: 2
+#output: 3
+#output: 4
+#output: array('i', [1, 2, 3, 4])
+
+print ("---------------------------------")
